@@ -1,5 +1,5 @@
 {
-"arrivees": [
+"Trains": [
     {
         "numero": "TER8394",
         "provenance": "Lyon Part-Dieu",
@@ -59,9 +59,7 @@
         "provenance": "Chambéry",
         "heure": "14:50",
         "retard": 0
-    }
-],
-"depart": [
+    },
     {
         "numero": "TGV7821",
         "destination": "Paris Gare de Lyon",
