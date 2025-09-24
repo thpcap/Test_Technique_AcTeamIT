@@ -13,6 +13,8 @@ $("Document").ready(function(){
         dataType: "json",
         success: function(data){
 
+            
+
             //triage des trains au départ par rapport à l'horaire
             data.depart.sort((a,b)=>{return a.heure.localeCompare(b.heure)})
 
