@@ -1,14 +1,20 @@
+/* ============================
+   🎨 Variables globales (thème)
+   ============================ */
 :root {
-    --bg-color: #0001ff;
-    --bg-color-tables: darkblue;
-    --text-color: white;
-    --border-color: rgb(0, 0, 80);
-    --table-bg-color: #001f4d;
-    --table-header-bg: #003366;
-    --table-header-text: white;
-    --late: red;
+    --bg-color: #0001ff;          /* Fond global */
+    --bg-color-tables: darkblue;  /* Fond des blocs tableaux */
+    --text-color: white;          /* Texte global */
+    --border-color: rgb(0, 0, 80);/* Bordures */
+    --table-bg-color: #001f4d;    /* Fond des tableaux */
+    --table-header-bg: #003366;   /* Fond des en-têtes */
+    --table-header-text: white;   /* Texte des en-têtes */
+    --late: red;                  /* Couleur des trains en retard */
 }
 
+/* ============================
+   🌍 Mise en page générale
+   ============================ */
 body {
     width: 100vw;
     margin: 0;
@@ -17,30 +23,35 @@ body {
     color: var(--text-color);
 }
 
+h1, h2 {
+    text-align: center;
+}
+
+/* ============================
+   📊 Tableaux
+   ============================ */
 table {
+    width: 100%;
     border: 2px solid var(--border-color);
-    width: 100%; 
     border-collapse: collapse;
     background-color: var(--table-bg-color);
     border-radius: 10px;
 }
-/*data des tableaux*/
+
 th, td {
     border: 2px solid var(--border-color);
-    margin: 0;
     padding: 8px;
     text-align: center;
 }
-/*header des tableaux*/
+
 th {
     background-color: var(--table-header-bg);
     color: var(--table-header-text);
 }
 
-tr{
-    border-radius: 10px;
-}
-
+/* ============================
+   📐 Conteneurs de tableaux
+   ============================ */
 #Tables {
     display: flex;
     gap: 5px;
@@ -49,18 +60,16 @@ tr{
 }
 
 .table {
-    border-radius: 10px;
+    flex: 1;                          
     margin: 10px;
-    flex: 1;
-    background-color: var(--bg-color-tables);
     padding: 5px;
+    border-radius: 10px;
+    background-color: var(--bg-color-tables);
 }
 
-h2, h1 {
-    text-align: center;
-}
-
-/*case des trains à l'arrivée*/
-.late{
+/* ============================
+   🚨 Trains en retard
+   ============================ */
+.late {
     background-color: var(--late);
 }
